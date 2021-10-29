@@ -7,3 +7,10 @@
     color:white;
     background-color:#0e7886;
 }
+
+
+.card-design:hover{
+    transform: scale(1.05);
+    transition: ease-in   0.5s;
+    transition: ease-out  0.5s;
+}

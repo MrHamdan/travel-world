@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Great Wall of China",
+        "location": "Huairou District, China",
+        "price": "500",
+        "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.The Great Wall actually consists of numerous walls—many of them parallel to each other—built over some two millennia across northern China and southern Mongolia. The most extensive and best-preserved version of the wall ",
+        "img": "https://www.mymola.com/media/5506/1200_mutianyugreatwall_6_19-9.jpg"
+    },
+    {
+        "title": "Korola Megna",
+        "location": "Nayang Yuri, Maldivs",
+        "price": "450",
+        "description": "Korola Megna is globally renowned for being one of the best diving sites in the world which adds it to the list of top Maldives points of interest. It was, in fact, the very first diving spot in Maldives to get recognition for licensed diving and training. Shaped like a banana, the reef is choc-a-block with exuberant marine life, fantastic corals, amazing cliffs, overhangs, and caves.",
+        "img": "https://clairesfootsteps.com/wp-content/uploads/2020/01/shutterstock_1492619375.jpg"
+    },
+    {
+        "title": "Petra",
+        "location": "Monuyeto, Jordan",
+        "price": "350",
+        "description": "Petra is a famous archaeological site in Jordan's southwestern desert. Dating to around 300 B.C., it was the capital of the Nabatean Kingdom. Accessed via a narrow canyon called Al Siq, it contains tombs and temples carved into pink sandstone cliffs, earning its nickname, Perhaps its most famous structure is 45m-high Al Khazneh, a temple with an ornate, Greek-style facade, and known as The Treasury.",
+        "img": "https://annaeverywhere.com/wp-content/uploads/2018/04/DSC03849-1200x800.jpg"
+    },
+    {
+        "title": "Miami Beach",
+        "location": "Florida, USA",
+        "price": "650",
+        "description": "Miami Beach is a south Florida island city, connected by bridges to mainland Miami. Wide beaches stretch from North Shore Open Space Park, past palm-lined Lummus Park to South Pointe Park. The southern end, South Beach, is known for its international cachet with models and celebrities, and its early-20th-century architecture in the Art Deco Historic district with pastel-colored buildings, especially on Ocean Drive.",
+        "img": "https://cdn.insuremytrip.com/resources/37928/florida_travel_insurance_miami_beach.jpg"
+    },
+    {
+        "title": "Borobudur",
+        "location": "Kalakori, Indonesia",
+        "price": "750",
+        "description": "Borobudur, also transcribed Barabudur is a 7th-century Mahayana Buddhist temple in Magelang Regency, not far from the town of Muntilan, in Central Java, Indonesia. It is the world's largest Buddhist temple. The temple consists of nine stacked platforms, six square and three circular, topped by a central dome.Borobudur was constructed between about 778 and 850 CE, under the Shailendra dynasty.",
+        "img": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/revision-2019/4.jpg"
+    },
+    {
+        "title": "Machu Picchu",
+        "location": "Picacu ,Peru",
+        "price": "250",
+        "description": "Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it’s renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views. Its exact former use remains a mystery.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Machu_Picchu%2C_Peru.jpg/1200px-Machu_Picchu%2C_Peru.jpg"
+    }
+]

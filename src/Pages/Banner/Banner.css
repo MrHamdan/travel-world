@@ -1,0 +1,19 @@
+.custom-bg{
+    background-image: url("../../images/greenland-chris-brinlee-jr-visit-greenland-4-flipped.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+.text-style{
+    font-size:40px;
+    color:white;
+    font-weight: bold;
+}
+
+.text-design{
+    font-size:40px;
+    color:#0e7886;
+    font-weight: bold;
+}
+

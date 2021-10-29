@@ -1,0 +1,35 @@
+.logo{
+    width: 50px;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(255, 255, 255);
+}
+
+.travel-text{
+    color:#0e7886;
+    font-size:30px;
+    font-weight:bold;
+}
+.world-text{
+    color:#ff757c;
+    font-size:30px;
+    font-weight:bold;
+}
+
+
+.login-btn-color{
+    color:white;
+    background-color:#0e7886;
+}
+
+.logout-btn-color{
+    color:white;
+    background-color:#ff4a52;
+}
+
+.link-color:hover{
+    color:white;
+    background-color:#dc3545;
+}

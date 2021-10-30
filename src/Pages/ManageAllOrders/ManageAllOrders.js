@@ -4,16 +4,16 @@ import React, { useEffect, useState } from 'react';
 const ManageAllOrders = () => {
 
     const [orders, setOrders] = useState([]);
-    const [isDelete, setIsDelete] = useState(false);
+    const [isDeleted, setIsDelete] = useState(false);
     const [isUpdated, setIsUpdated] = useState(false);
 
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://intense-beach-32982.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
-    }, [isDelete, isUpdated])
+    }, [isDeleted, isUpdated])
 
 
 
@@ -21,14 +21,14 @@ const ManageAllOrders = () => {
         console.log(id, 'deleted');
         const proceed = window.confirm('Are you sure you want to cancle this user order?');
         if (proceed) {
-            fetch(`http://localhost:5000/deleteOrders/${id}`, {
+            fetch(`https://intense-beach-32982.herokuapp.com/deleteOrders/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount) {
                         alert('Delete Successful!')
-                        setIsDelete(!isDelete);
+                        setIsDelete(!isDeleted);
                     }
                     else {
                         setIsDelete(false);
@@ -42,7 +42,7 @@ const ManageAllOrders = () => {
         const updatedStatus = {
             status: 'approved'
         }
-        axios.put(`http://localhost:5000/orders/${id}`, {
+        axios.put(`https://intense-beach-32982.herokuapp.com/orders/${id}`, {
             status: 'approved'
         })
             .then(res => {
@@ -71,7 +71,7 @@ const ManageAllOrders = () => {
                                     <tr>
                                         <th scope="col">Name</th>
                                         <th scope="col">Email</th>
-                                        <th scope="col">Order</th>
+                                        <th scope="col">Booking</th>
                                         <th scope="col">Status</th>
                                         <th scope="col">Handle</th>
                                     </tr>

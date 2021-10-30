@@ -5,7 +5,7 @@ import './AddANewService.css'
 const AddANewService = () => {
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch("http://localhost:5000/addService", {
+        fetch("https://intense-beach-32982.herokuapp.com/addService", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
@@ -22,7 +22,7 @@ const AddANewService = () => {
     return (
         <div className="container border-4 rounded-3xl">
             <form onSubmit={handleSubmit(onSubmit)}>
-                <h1>Add A New Service</h1>
+                <h1>Add A New Location</h1>
                 <input
                     {...register("title")}
                     placeholder="title"

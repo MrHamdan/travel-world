@@ -9,7 +9,7 @@ const Home = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/services")
+        fetch("https://intense-beach-32982.herokuapp.com/services")
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -25,7 +25,7 @@ const Home = () => {
                     <h1 className="text-design3">Here's Our Popular Services</h1>
                     <h4 className="text-design2">Here you can find our most poular services. There are many more services in the course section you can explore more services here.</h4>
                 </div>
-                <div id="services" className="row row-cols-1 row-cols-md-3 p-5">
+                <div id="travellocations" className="row row-cols-1 row-cols-md-3 p-5">
                     {/* Show services */}
                     {
                         services.map(service => <Service

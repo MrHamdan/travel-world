@@ -13,7 +13,7 @@ const BookService = () => {
     const [service, setService] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://intense-beach-32982.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
@@ -26,7 +26,7 @@ const BookService = () => {
             status: 'pending'
         };
         console.log(bookingInfo);
-        axios.post('http://localhost:5000/order', bookingInfo)
+        axios.post('https://intense-beach-32982.herokuapp.com/order', bookingInfo)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Booking Order Successful. Visit My Orders for update.');

@@ -24,21 +24,21 @@ const Header = () => {
                         <Navbar.Collapse bg="light" id="basic-navbar-nav">
                             <Nav className="me-auto align-items-center">
                                 <Nav.Link as={HashLink} to="/home#home" ><button className="link-color p-2 rounded">Home</button></Nav.Link>
-                                <Nav.Link as={HashLink} to="/home#services"><button className="link-color p-2 rounded">Services</button></Nav.Link>
+                                <Nav.Link as={HashLink} to="/home#travellocations"><button className="link-color p-2 rounded">Travel Locations</button></Nav.Link>
                                 <NavLink to="/about" className="mx-2"><button className="link-color p-2 rounded">About Us</button></NavLink>
                                 <NavLink to="/contact" className="mx-2"><button className="link-color p-2 rounded">Contact</button></NavLink>
                                 {user?.email ?
                                     <Dropdown>
                                         <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                            Orders Menu
+                                            Booking Menu
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
-                                            <Dropdown.Item as={Link} to="/myorders" className="mb-2">My Orders</Dropdown.Item>
+                                            <Dropdown.Item as={Link} to="/myorders" className="mb-2">My Booking</Dropdown.Item>
                                             <Dropdown.Item as={Link}
-                                                to="/manageallorders" className="mb-2">Manage All Orders</Dropdown.Item>
+                                                to="/manageallorders" className="mb-2">Manage All Booking</Dropdown.Item>
                                             <Dropdown.Item as={Link}
-                                                to="/addanewservice" className="mb-2">Add A New Service</Dropdown.Item>
+                                                to="/addanewservice" className="mb-2">Add A New Location</Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>
                                     :

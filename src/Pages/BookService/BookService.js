@@ -29,7 +29,7 @@ const BookService = () => {
         axios.post('http://localhost:5000/order', bookingInfo)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert('Event Booking Successful. Visit My Bookings for updated.');
+                    alert('Booking Order Successful. Visit My Orders for update.');
                     reset();
                 }
             })

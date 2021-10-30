@@ -15,23 +15,26 @@ const MyOrders = () => {
             .then((res) => res.json())
             .then((data) => setOrders(data));
 
-    }, [isDelete]);
+    }, [isDelete, user.email]);
 
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/deleteOrders/${id}`, {
-            method: "DELETE",
-            headers: { "content-type": "application/json" },
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                if (data.deletedCount) {
-                    alert('Your Order Has Been Deleted')
-                    setDelete(!isDelete);
-                } else {
-                    setDelete(false);
-                }
-            });
+        const proceed = window.confirm('Cancel Your Order ! Are you sure?');
+        if (proceed) {
+            fetch(`http://localhost:5000/deleteOrders/${id}`, {
+                method: "DELETE",
+                headers: { "content-type": "application/json" },
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    if (data.deletedCount) {
+                        alert('Your Order Has Been Deleted')
+                        setDelete(!isDelete);
+                    } else {
+                        setDelete(false);
+                    }
+                });
+        }
 
     };
 

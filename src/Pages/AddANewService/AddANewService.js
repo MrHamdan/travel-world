@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import './AddANewService.css'
 
 const AddANewService = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         fetch("http://localhost:5000/addService", {
             method: 'POST',
@@ -11,7 +11,12 @@ const AddANewService = () => {
             body: JSON.stringify(data)
         })
             .then(res => res.json())
-            .then(result => console.log(result))
+            .then(res => {
+                if (res.insertedId) {
+                    alert('New Location Has Been Added!');
+                    reset();
+                }
+            })
         console.log(data)
     };
     return (

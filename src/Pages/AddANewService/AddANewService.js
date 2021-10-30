@@ -5,19 +5,22 @@ import './AddANewService.css'
 const AddANewService = () => {
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch("https://intense-beach-32982.herokuapp.com/addService", {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(res => {
-                if (res.insertedId) {
-                    alert('New Location Has Been Added!');
-                    reset();
-                }
+        const proceed = window.confirm('Do You Want To Add This New Location ?');
+        if (proceed) {
+            fetch("https://intense-beach-32982.herokuapp.com/addService", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
             })
-        console.log(data)
+                .then(res => res.json())
+                .then(res => {
+                    if (res.insertedId) {
+                        alert('New Location Has Been Added!');
+                        reset();
+                    }
+                })
+            console.log(data)
+        }
     };
     return (
         <div className="container border-4 rounded-3xl">

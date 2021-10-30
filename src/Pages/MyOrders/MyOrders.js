@@ -41,22 +41,56 @@ const MyOrders = () => {
 
     return (
         <div>
-            {
-                orders.map((user) => (
-                    <Card key={user._id} className="container" style={{ width: '18rem' }}>
-                        <Card.Body>
-                            <Card.Title>{user.name}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{user.number}</Card.Subtitle>
-                            <Card.Text>
-                                {user.from} To {user.to}
-                            </Card.Text>
-                            <p>Date: {user.date}</p>
-                            <p>Status: {user.status}</p>
-                            <Button onClick={() => handleDelete(user._id)} variant="danger">DELETE</Button>
-                        </Card.Body>
-                    </Card>
-                ))
-            }
+
+
+
+
+
+
+            <div>
+                <div>
+                    <h1 className="p-4">Manage Your Booking</h1>
+                    {!orders && (<div className="text-center">
+                        <div className="spinner-grow text-danger text-center" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </div>
+                    </div>)}
+                    <div className='table-responsive'>
+                        <table className="mx-auto table table-bordered table-hover align-middle table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">From</th>
+                                    <th scope="col">To</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                {orders.map(user => <tr key={user._id}>
+                                    <td>{user.name}</td>
+                                    <td>{user.email}</td>
+                                    <td>{user.from}</td>
+                                    <td>{user.to}</td>
+                                    <td>{user.date}</td>
+                                    <td>{user.status}</td>
+                                    <td>
+                                        <button onClick={() => handleDelete(user._id)} className="btn btn-danger my-1">Delete</button></td>
+                                </tr>)}
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+
         </div >
     );
 };

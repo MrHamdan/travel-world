@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row, Spinner } from 'react-bootstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Banner from '../Banner/Banner';
+import Reviews from '../Reviews/Reviews';
 import Service from '../Service/Service';
 import './Home.css'
 
@@ -25,15 +26,18 @@ const Home = () => {
                     <h1 className="text-design3">Here's Our Popular Services</h1>
                     <h4 className="text-design2">Here you can find our most poular services. There are many more services in the course section you can explore more services here.</h4>
                 </div>
-                <div id="travellocations" className="row row-cols-1 row-cols-md-3 p-5">
-                    {/* Show services */}
-                    {
-                        services.map(service => <Service
-                            key={service._id}
-                            service={service}
-                        ></Service>)
-                    }
-                </div>
+                {services.length === 0 ?
+                    <Spinner animation="border" variant="info" />
+                    :
+                    <div id="travellocations" className="row row-cols-1 row-cols-md-3 p-5">
+                        {/* Show services */}
+                        {
+                            services.map(service => <Service
+                                key={service._id}
+                                service={service}
+                            ></Service>)
+                        }
+                    </div>}
                 <Row xs={1} md={2} className="g-4">
 
                     <Col>
@@ -116,6 +120,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Reviews></Reviews>
             </div>
         </div>
     );

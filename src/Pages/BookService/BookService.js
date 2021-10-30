@@ -74,6 +74,9 @@ const BookService = () => {
                                         <label htmlFor="">To:</label>
                                         <input  {...register("to", { required: true })} />
 
+                                        <label htmlFor="">Date:</label>
+                                        <input {...register("date")} type="date" className="" />
+
                                         {errors.exampleRequired && <span>This field is required</span>}
 
                                         <input type="submit" value="Order" />

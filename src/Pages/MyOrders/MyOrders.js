@@ -50,6 +50,7 @@ const MyOrders = () => {
                             <Card.Text>
                                 {user.from} To {user.to}
                             </Card.Text>
+                            <p>Date: {user.date}</p>
                             <p>Status: {user.status}</p>
                             <Button onClick={() => handleDelete(user._id)} variant="danger">DELETE</Button>
                         </Card.Body>

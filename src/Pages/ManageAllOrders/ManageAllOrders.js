@@ -66,7 +66,7 @@ const ManageAllOrders = () => {
                             </div>
                         </div>)}
                         <div className='p-4'>
-                            <table className="mx-auto table table-light table-striped">
+                            <table className="mx-auto table table-dark table-striped">
                                 <thead>
                                     <tr>
                                         <th scope="col">Name</th>

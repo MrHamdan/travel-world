@@ -66,7 +66,7 @@ const ManageAllOrders = () => {
                             </div>
                         </div>)}
                         <div className='table-responsive'>
-                            <table className="mx-auto table table-hover table-dark table-striped">
+                            <table className="mx-auto table table-hover align-middle table-dark table-striped">
                                 <thead>
                                     <tr>
                                         <th scope="col">Name</th>
@@ -81,8 +81,7 @@ const ManageAllOrders = () => {
                                     {orders.map(order => <tr key={order._id}>
                                         <td>{order.name}</td>
                                         <td>{order.email}</td>
-                                        <td>From : {order.from} <br /> To: {order.to}</td>
-                                        <td>{order.date}</td>
+                                        <td>From : {order.from} <br /> To: {order.to} <br /> Date : {order.date}</td>
                                         <td>{order.status}</td>
                                         <td><button onClick={() => handleUpdate(order._id)} className="btn btn-success m-1">Update</button>
                                             <button onClick={() => handleDelete(order._id)} className="btn btn-danger my-1">Delete</button></td>

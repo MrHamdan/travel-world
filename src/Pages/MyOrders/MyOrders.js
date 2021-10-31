@@ -28,7 +28,7 @@ const MyOrders = () => {
                 .then((res) => res.json())
                 .then((data) => {
                     if (data.deletedCount) {
-                        alert('Your Order Has Been Deleted')
+                        alert('Your Order Has Been Cancled')
                         setDelete(!isDelete);
                     } else {
                         setDelete(false);
@@ -78,7 +78,7 @@ const MyOrders = () => {
                                     <td>{user.date}</td>
                                     <td>{user.status}</td>
                                     <td>
-                                        <button onClick={() => handleDelete(user._id)} className="btn btn-danger my-1">Delete</button></td>
+                                        <button onClick={() => handleDelete(user._id)} className="btn btn-danger my-1">Cancle</button></td>
                                 </tr>)}
 
                             </tbody>

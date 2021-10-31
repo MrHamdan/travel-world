@@ -123,6 +123,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
+                <h1 className="py-5">Travellers Review</h1>
                 <Reviews></Reviews>
             </div>
             <div>

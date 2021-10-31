@@ -25,7 +25,7 @@ const Header = () => {
                             <Nav className="me-auto align-items-center">
                                 <Nav.Link as={HashLink} to="/home#home" ><button className="link-color p-2 rounded">Home</button></Nav.Link>
                                 <Nav.Link as={HashLink} to="/home#locations"><button className="link-color p-2 rounded">Locations</button></Nav.Link>
-                                <Nav.Link as={HashLink} to="/home#about" className="mx-2"><button className="link-color p-2 rounded">About Us</button></Nav.Link>
+                                <Nav.Link as={HashLink} to="/home#about" className="mx-2"><button className="link-color p-2 rounded">About</button></Nav.Link>
                                 <Nav.Link as={HashLink} to="/home#contact" className="mx-2"><button className="link-color p-2 rounded">Contact</button></Nav.Link>
                                 {user?.email ?
                                     <Dropdown>

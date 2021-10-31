@@ -38,9 +38,9 @@ const Reviews = () => {
                                     /></div>
                                 <div className="col-6">
                                     <h3>Olivia James</h3>
-                                    <article>One of the best travel experience i have ever had highly,</article>
-                                    <article>recommended very affordable and safe and comfortable journey,</article>
-                                    <article>they provide one of the best experience for their customer</article>
+                                    <article>My dream came true because of travel world very affordable,</article>
+                                    <article>pricing and we enjoyed it very much we love travel and,</article>
+                                    <article>with the help of travel world we are truly happy with it.</article>
                                     <span className="fs-5"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></span>
                                 </div>
                             </div>
@@ -59,9 +59,9 @@ const Reviews = () => {
                                     /></div>
                                 <div className="col-6">
                                     <h3>Ben Domor</h3>
-                                    <article>One of the best travel experience i have ever had highly,</article>
-                                    <article>recomanded very effordable and safe and confortable journy,</article>
-                                    <article>they provide one of the best experience for their customer</article>
+                                    <article>Very Good service and reasonable price on every tour very,</article>
+                                    <article>satisfied we enjoy every our journey very much so happy,</article>
+                                    <article>about it and very satisfied travel world is the best</article>
                                     <span className="fs-5"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></span>
                                 </div>
                             </div>

@@ -87,8 +87,8 @@ const ManageAllOrders = () => {
                                         <td>{order.to}</td>
                                         <td>{order.date}</td>
                                         <td>{order.status}</td>
-                                        <td><button onClick={() => handleUpdate(order._id)} className="btn btn-success m-1"><i class="far fa-thumbs-up"></i> Update</button>
-                                            <button onClick={() => handleDelete(order._id)} className="btn btn-danger my-1"><i class="fas fa-eraser"></i> Delete</button></td>
+                                        <td><button onClick={() => handleUpdate(order._id)} className="btn btn-success m-1"><i className="far fa-thumbs-up"></i> Update</button>
+                                            <button onClick={() => handleDelete(order._id)} className="btn btn-danger my-1"><i className="fas fa-eraser"></i> Delete</button></td>
                                     </tr>)}
 
                                 </tbody>

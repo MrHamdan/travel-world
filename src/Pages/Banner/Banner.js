@@ -10,11 +10,12 @@ const Banner = () => {
     return (
         <div>
             <div className="custom-bg d-flex align-items-center">
-                <p className="text-style container">MediCare Health Center <br />We Provide One Of The Best Health Care Services All Over The World <br /><Button className=" mx-auto" variant="danger">Take A Tour</Button></p>
+                <p className="text-style container">Lifelong Memories Just A <br />Few Seconds Away Let's Start Your Journey With Us Your Dream Will Come True<br /><Button className=" mx-auto" variant="danger">Take A Tour</Button></p>
             </div>
 
             <div className="carousel-design mx-auto">
-                <h1 className="text-design mt-5 mb-5">Here Are Some Interesting Images Of MediCare Health Center</h1>
+                <h1 className="text-design mt-5 ">Here Are Some Stunning Images</h1>
+                <h5 className="container mb-4">Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements, as in the case of tourism.</h5>
                 <Carousel>
                     <Carousel.Item>
                         <img

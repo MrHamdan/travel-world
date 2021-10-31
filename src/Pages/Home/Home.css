@@ -9,45 +9,18 @@
     font-weight: bold;
 }
 
+.image-height{
+  height:660px;
+}
+
 
 
 
 
 /* why choose us */
-.choose__us {
+.about-us {
     background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-Blue-White-Background-Image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-  .choose__us__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .choose__us__container span {
-    font-weight: 600;
-    font-size: 20px;
-    color: #20bdd1;
-  }
-  
-  .choose__us__container h1 {
-    color: #02123a;
-    font-weight: 700;
-    margin: 15px 0;
-    font-size: 40px;
-  }
-  .choose__us__container h5 {
-    font-weight: 500;
-    font-size: 15px;
-    color: #02123a;
-    margin-bottom: 20px;
-  }
-  .choose__us__container h2 {
-    color: #02123a;
-    font-weight: 700;
-    margin: 15px 0;
-    font-size: 30px;
-  }
-  

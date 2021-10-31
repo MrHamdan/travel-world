@@ -49,7 +49,7 @@ const Header = () => {
                                     :
                                     <NavLink to="/login" className="mx-2"><button className="mx-2 px-4 login-btn-color p-2 rounded">LogIn</button></NavLink>}
                                 <Navbar.Text className="text-black mx-3">
-                                    Signed in as : <a className="text-black" href="#login">{user.email}</a>
+                                    Logged in as : <a className="text-black" href="#login">{user.email}</a>
                                 </Navbar.Text>
                             </Nav>
                         </Navbar.Collapse>

@@ -47,7 +47,7 @@ const Home = () => {
 
                 </div>
             </div>
-            <h1 className="py-5">About Us</h1>
+            <h1 id="about" className="py-5">About Us</h1>
             <h5 className="container mb-5">Our Definition of Travel World
 
                 When people leave their usual environment, they come into contact with new people, new sights, new experiences, and new ideas.
@@ -61,7 +61,7 @@ const Home = () => {
                 local experiences, like going to a restaurant in a different neighborhood, visiting a cultural institution to see the exhibits or for an event, or joining a local tour
                 regional experiences, like day trips or camping
                 short and long-term relocation for school or work</h5>
-            <div id="about" className="about-us mt-2 grid md:grid-cols-2 sm:grid-cols-1 mb-5">
+            <div className="about-us mt-2 grid md:grid-cols-2 sm:grid-cols-1 mb-5">
 
                 <Fade left>
 

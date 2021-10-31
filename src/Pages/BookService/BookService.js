@@ -43,10 +43,10 @@ const BookService = () => {
                 <div className="border-4 mb-3 mx-2">
                     <div className="row g-0">
                         <div>
-                            <h3 className="card-title">{service?.title}</h3>
-                            <h5 className="card-text">{service?.description}</h5>
-                            <h6 className="card-text"><small className="text-muted">{service?.location}</small></h6>
-                            <span>Price: $ {service?.price}</span>
+                            <h3 className="card-title text-design py-5">{service?.title}</h3>
+                            <h6 className="card-text container">{service?.description}</h6>
+                            <h5 className="card-text"><small className="text-muted">{service?.location}</small></h5>
+                            <span className="fs-5">Price: $ {service?.price}</span>
                         </div>
                         <div className="col-md-6 d-flex align-items-center">
                             <img src={service?.img} className="img-fluid pt-5 rounded" alt="..." />

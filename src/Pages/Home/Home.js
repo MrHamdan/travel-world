@@ -52,7 +52,7 @@ const Home = () => {
             <div id="about" className="about-us mt-2 grid md:grid-cols-2 sm:grid-cols-1 mb-5">
                 <Fade left>
                     <div>
-                        <img className="image-height rounded" src="https://images.unsplash.com/photo-1530804458434-67fe207c3a71?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFpbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        <img className=" rounded" src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="" />
                     </div>
                 </Fade>
                 <div>

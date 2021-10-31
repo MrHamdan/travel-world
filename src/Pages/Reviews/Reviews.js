@@ -39,7 +39,7 @@ const Reviews = () => {
                                 <div className="col-6">
                                     <h3>Olivia James</h3>
                                     <article>One of the best travel experience i have ever had highly,</article>
-                                    <article>recomanded very effordable and safe and confortable journy,</article>
+                                    <article>recommended very affordable and safe and comfortable journey,</article>
                                     <article>they provide one of the best experience for their customer</article>
                                     <span className="fs-5"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></span>
                                 </div>

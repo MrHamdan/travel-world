@@ -33,7 +33,7 @@ const Home = () => {
                     <Spinner animation="border" variant="info" />
                     :
 
-                    <div id="travellocations" className="row row-cols-1 row-cols-md-3 pb-5">
+                    <div id="locations" className="row row-cols-1 row-cols-md-3 pb-5">
                         {/* Show services */}
                         {
                             services.map(service => <Service
@@ -49,6 +49,19 @@ const Home = () => {
                 </div>
             </div>
             <h1 className="py-5">About Us</h1>
+            <h5 className="container mb-5">Our Definition of Travel World
+
+                When people leave their usual environment, they come into contact with new people, new sights, new experiences, and new ideas.
+
+                That exposure allows individuals to learn more about themselves and the world around them, creating greater internal and societal awareness.
+
+                For Travel Unity, travel experiences go beyond those involved airplane travel.
+
+                For us, travel includes:
+
+                local experiences, like going to a restaurant in a different neighborhood, visiting a cultural institution to see the exhibits or for an event, or joining a local tour
+                regional experiences, like day trips or camping
+                short and long-term relocation for school or work</h5>
             <div id="about" className="about-us mt-2 grid md:grid-cols-2 sm:grid-cols-1 mb-5">
                 <Fade left>
                     <div>
@@ -114,7 +127,8 @@ const Home = () => {
                 <Reviews></Reviews>
             </div>
             <div>
-                <div className="py-5"><h1>Contact</h1></div>
+                <div id="contact" className="py-5"><h1>Contact</h1></div>
+                <h5 className="mb-5">We’d love to hear from like-minded individuals and organizations who believe in making the world of travel welcoming to people of all background and abilities.</h5>
                 <Contact></Contact>
             </div>
         </div>

@@ -18,7 +18,7 @@ const Footer = () => {
     const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} />;
     const pinteresIcon = <FontAwesomeIcon icon={faPinterest} />;
     return (
-        <footer className="w-100 py-4 flex-shrink-0">
+        <footer className="w-100 flex-shrink-0 border-t-2">
             <div className="container py-4">
                 <div className="row gy-4 gx-5 d-flex align-items-center mx-5">
                     <div className="col-lg-4 col-md-6">

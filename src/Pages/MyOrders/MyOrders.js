@@ -72,7 +72,7 @@ const MyOrders = () => {
                                     <td>{user.date}</td>
                                     <td>{user.status}</td>
                                     <td>
-                                        <button onClick={() => handleDelete(user._id)} className="btn btn-danger my-1">Cancle</button></td>
+                                        <button onClick={() => handleDelete(user._id)} className="btn btn-danger my-1"><i class="fas fa-ban"></i> Cancle</button></td>
                                 </tr>)}
 
                             </tbody>

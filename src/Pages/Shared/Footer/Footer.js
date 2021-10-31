@@ -24,7 +24,7 @@ const Footer = () => {
                     <div className="col-lg-4 col-md-6">
                         <img className="d-flex mx-auto mb-3" src={icon} alt="" />
                         <p className=" text-muted">Travel World</p>
-                        <p className="small text-muted mb-0">Copyright &copy; 2021 All Rights Reserved. <a className="text-primary text-info" href="#">Hamdan</a></p>
+                        <p className="small text-muted mb-0">Copyright &copy; 2021 All Rights Reserved. <a className="text-primary text-danger" href="#">Hamdan</a></p>
                     </div>
                     <div className="col-lg-4 col-md-6 ms-auto">
                         <h5 className="text-black mb-3">Travel World</h5>

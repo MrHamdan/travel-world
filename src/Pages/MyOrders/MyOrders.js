@@ -18,7 +18,7 @@ const MyOrders = () => {
 
 
     const handleDelete = (id) => {
-        const proceed = window.confirm('Cancel Your Order ! Are you sure?');
+        const proceed = window.confirm('Cancel Your Booking ! Are you sure?');
         if (proceed) {
             fetch(`https://intense-beach-32982.herokuapp.com/deleteOrders/${id}`, {
                 method: "DELETE",
@@ -27,7 +27,7 @@ const MyOrders = () => {
                 .then((res) => res.json())
                 .then((data) => {
                     if (data.deletedCount) {
-                        alert('Your Order Has Been Cancled')
+                        alert('Your Booking Has Been Cancled')
                         setDelete(!isDelete);
                     } else {
                         setDelete(false);

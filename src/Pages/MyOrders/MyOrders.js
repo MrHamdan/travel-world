@@ -42,7 +42,7 @@ const MyOrders = () => {
         <div>
             <div>
                 <div>
-                    <h1 className="p-4">Manage Your Booking</h1>
+                    <h1 className="p-4">My Bookings</h1>
                     {!orders && (<div className="text-center">
                         <div className="spinner-grow text-danger text-center" role="status">
                             <span className="visually-hidden">Loading...</span>

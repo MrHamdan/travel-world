@@ -5,8 +5,8 @@
  * Implements Firebase google sign in authentication with error handling. 
  * Add react basic and private route.
  * Handle page not found with Return To Home Button.
- * Designed with [ReactReveal](https://www.react-reveal.com/).
  * Designed with [ReactBootstrap](https://react-bootstrap.github.io/).
+ * Designed with [ReactReveal](https://www.react-reveal.com/).
  * Designed with [Tailwind](https://tailwindcss.com/).
 
 #### Developed by [Hamdan](https://github.com/MrHamdan)

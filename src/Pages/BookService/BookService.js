@@ -29,7 +29,7 @@ const BookService = () => {
         axios.post('https://intense-beach-32982.herokuapp.com/order', bookingInfo)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert('Booking Order Successful. Visit My Orders for update.');
+                    alert('Booking Order Successful. Visit My Bookings for update.');
                     reset();
                 }
             })

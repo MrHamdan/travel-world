@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div>
             <Navbar className="navbar" expand="lg">
-                <Container>
+                <Container className="d-flex align-items-center justify-content-center justify-content-around">
                     <div className="d-flex align-items-center">
                         <div>
                             <Navbar.Brand as={Link} to="/home"><img className="logo mt-4" src={logo} alt="" /></Navbar.Brand>

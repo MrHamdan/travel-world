@@ -34,9 +34,9 @@ const Header = () => {
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
-                                            <Dropdown.Item as={Link} to="/myorders" className="mb-2">My Booking</Dropdown.Item>
+                                            <Dropdown.Item as={Link} to="/myorders" className="mb-2">My Bookings</Dropdown.Item>
                                             <Dropdown.Item as={Link}
-                                                to="/manageallorders" className="mb-2">Manage All Booking</Dropdown.Item>
+                                                to="/manageallorders" className="mb-2">Manage All Bookings</Dropdown.Item>
                                             <Dropdown.Item as={Link}
                                                 to="/addanewservice" className="mb-2">Add A New Location</Dropdown.Item>
                                         </Dropdown.Menu>

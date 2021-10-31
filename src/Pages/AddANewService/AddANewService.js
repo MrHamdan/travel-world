@@ -25,7 +25,7 @@ const AddANewService = () => {
     return (
         <div className="container border-4 rounded-3xl">
             <form onSubmit={handleSubmit(onSubmit)}>
-                <h1>Add A New Location</h1>
+                <h1 className="py-4">Add A New Location</h1>
                 <input
                     {...register("title")}
                     placeholder="title"

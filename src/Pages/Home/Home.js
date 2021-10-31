@@ -25,14 +25,14 @@ const Home = () => {
 
             <div className="container mt-5">
                 <div className="text-center">
-                    <h1 className="text-design3">Most Visited & Popular Travel Locations</h1>
+                    <h1 id="locations" className="text-design3">Most Visited & Popular Travel Locations</h1>
                     <h5 className="">There are so many amazing places around the globe to see, we couldn't possibly include them all in just one list. But, these breathtaking destinations are definitely worth bumping to the top of your travel bucket list–whether you're looking to relax on a beach, get off the grid or explore a city.</h5>
                 </div>
                 {services.length === 0 ?
                     <Spinner animation="border" variant="info" />
                     :
 
-                    <div id="locations" className="row row-cols-1 row-cols-md-3 pb-5">
+                    <div className="row row-cols-1 row-cols-md-3 pb-5">
                         {/* Show services */}
                         {
                             services.map(service => <Service

@@ -56,7 +56,7 @@ const BookService = () => {
 
                                 <div>
                                     <form className="rounded-3xl container mx-2" onSubmit={handleSubmit(onSubmit)}>
-                                        <h1>Booking Informations. <i class="fas fa-info-circle"></i></h1>
+                                        <h1>Booking Informations. <i class="far fa-address-card"></i></h1>
 
                                         <label htmlFor="">Name:</label>
                                         <input defaultValue={user?.displayName} {...register("name")} />

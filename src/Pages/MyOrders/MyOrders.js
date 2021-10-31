@@ -41,12 +41,6 @@ const MyOrders = () => {
 
     return (
         <div>
-
-
-
-
-
-
             <div>
                 <div>
                     <h1 className="p-4">Manage Your Booking</h1>

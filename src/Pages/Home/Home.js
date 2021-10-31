@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Card, Col, Row, Spinner } from 'react-bootstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 import Banner from '../Banner/Banner';
 import Reviews from '../Reviews/Reviews';
 import Service from '../Service/Service';

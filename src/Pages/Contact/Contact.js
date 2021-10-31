@@ -93,7 +93,7 @@ const Contact = () => {
                             type="text"
                             className="form-control border border-dark"
                             id="exampleFormControlInput1"
-                            placeholder="Yout name here"
+                            placeholder="Your name here"
                         />
                     </div>
                     <div className="mb-3 col-xl-8 col-lg-8 col-md-6 col-12 mx-auto">

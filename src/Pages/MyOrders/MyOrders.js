@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { Button, Card } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 
 const MyOrders = () => {

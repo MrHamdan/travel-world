@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row, Spinner } from 'react-bootstrap';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 import Banner from '../Banner/Banner';
 import Reviews from '../Reviews/Reviews';
 import Service from '../Service/Service';
@@ -62,62 +63,72 @@ const Home = () => {
                 short and long-term relocation for school or work</h5>
             <div id="about" className="about-us mt-2 grid md:grid-cols-2 sm:grid-cols-1 mb-5">
 
-                <div>
-                    <img className=" rounded" src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="" />
-                </div>
+                <Fade left>
+
+                    <div>
+                        <img className=" rounded" src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="" />
+                    </div>
+
+                </Fade>
 
                 <div>
 
-                    <Row xs={1} md={2} className="g-4 pt-2 px-2 container mx-auto">
+                    <Fade right>
 
-                        <Col>
-                            <Card className="border-0">
-                                <img className="w-50 mx-auto rounded-3xl pt-3" src="https://images.all-free-download.com/images/graphiclarge/travel_the_journey_of_picture_167829.jpg" alt="" />
-                                <Card.Body>
-                                    <Card.Title>Safe & Comfortable Journey</Card.Title>
-                                    <Card.Text>
-                                        Have a very safe and comfortable journey with us we always provide the best experience
-                                        for our customers and fullfil their desire.
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="border-0">
-                                <img className="w-50 mx-auto rounded-3xl pt-3" src="https://nearmetrade.com/local/public/vendor/hotel%20bareilly4.jpg" alt="" />
-                                <Card.Body>
-                                    <Card.Title>Luxurious Hotels</Card.Title>
-                                    <Card.Text>
-                                        You will get luxurious hotel and special home made foods made by our
-                                        special chefs and your food is going to serve to your room.
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="border-0">
-                                <img className="w-50 mx-auto rounded-3xl pt-3" src="https://st3.depositphotos.com/5392356/12764/i/600/depositphotos_127649128-stock-photo-group-led-by-tour-guide.jpg" alt="" />
-                                <Card.Body>
-                                    <Card.Title>Travel Guide</Card.Title>
-                                    <Card.Text>
-                                        Our Travel guides familiarize people with the history, functions, and customs of a particular region or establishment.
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="border-0">
-                                <img className="w-50 mx-auto rounded-3xl pt-3" src="https://www.intelastel.com/wp-content/uploads/2021/04/help-desk-scaled-652x435.jpg" alt="" />
-                                <Card.Body>
-                                    <Card.Title>Our Dedicated Support</Card.Title>
-                                    <Card.Text>
-                                        We have a dedicated support team working on travel matters and ensures that our customers will have no issues while travelling with us.
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                        <Row xs={1} md={2} className="g-4 pt-2 px-2 container mx-auto">
 
-                    </Row>
+                            <Col>
+                                <Card className="border-0">
+                                    <img className="w-50 mx-auto rounded-3xl pt-3" src="https://images.all-free-download.com/images/graphiclarge/travel_the_journey_of_picture_167829.jpg" alt="" />
+                                    <Card.Body>
+                                        <Card.Title>Safe & Comfortable Journey</Card.Title>
+                                        <Card.Text>
+                                            Have a very safe and comfortable journey with us we always provide the best experience
+                                            for our customers and fullfil their desire.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card className="border-0">
+                                    <img className="w-50 mx-auto rounded-3xl pt-3" src="https://nearmetrade.com/local/public/vendor/hotel%20bareilly4.jpg" alt="" />
+                                    <Card.Body>
+                                        <Card.Title>Luxurious Hotels</Card.Title>
+                                        <Card.Text>
+                                            You will get luxurious hotel and special home made foods made by our
+                                            special chefs and your food is going to serve to your room.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card className="border-0">
+                                    <img className="w-50 mx-auto rounded-3xl pt-3" src="https://st3.depositphotos.com/5392356/12764/i/600/depositphotos_127649128-stock-photo-group-led-by-tour-guide.jpg" alt="" />
+                                    <Card.Body>
+                                        <Card.Title>Travel Guide</Card.Title>
+                                        <Card.Text>
+                                            Our Travel guides familiarize people with the history, functions, and customs of a particular region or establishment.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card className="border-0">
+                                    <img className="w-50 mx-auto rounded-3xl pt-3" src="https://www.intelastel.com/wp-content/uploads/2021/04/help-desk-scaled-652x435.jpg" alt="" />
+                                    <Card.Body>
+                                        <Card.Title>Our Dedicated Support</Card.Title>
+                                        <Card.Text>
+                                            We have a dedicated support team working on travel matters and ensures that our customers will have no issues while travelling with us.
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+
+                        </Row>
+
+                    </Fade>
+
+
 
                 </div>
             </div>

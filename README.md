@@ -8,7 +8,7 @@
  * Admin can delete update client booking using Manage All Booking.
  * Client can easily book any package and check what he/she booking.
  * Client can see company statistics and give his/her opinion.
- * Add react router and private route.
+ * Used React Hook Form for form submission and also added react router and private route.
  * Handle page not found with Return To Home Button.
  * Designed with [ReactBootstrap](https://react-bootstrap.github.io/).
  * Designed with [ReactReveal](https://www.react-reveal.com/).

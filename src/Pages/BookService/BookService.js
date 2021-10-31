@@ -43,7 +43,7 @@ const BookService = () => {
                 <div className="border-4 mb-3 mx-2">
                     <div className="row g-0">
                         <div>
-                            <h3 className="card-title text-design py-5">{service?.title}</h3>
+                            <h3 className="card-title text-design py-3">{service?.title}</h3>
                             <h6 className="card-text container">{service?.description}</h6>
                             <h5 className="card-text"><small className="text-muted">{service?.location}</small></h5>
                             <span className="fs-5">Price: $ {service?.price}</span>
